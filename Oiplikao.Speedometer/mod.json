@@ -1,0 +1,27 @@
+{
+	"ApiId" : "Oiplikao.Speedometer",
+	"Name": "Speedometer",
+	"Description": "Enables the speedometer",
+	"Version": "1.0.0",
+	"Authors": ["Oiplikao"],
+	"LoadPriority": 2,
+	
+	"ConVars":
+	[
+		{
+			"Name": "speedometer_units",
+			"DefaultValue": "put_metric_here_to_use_metric_units"
+		}
+	],
+	
+	"Scripts":
+	[
+		{
+			"Path": "client\cl_pilot_speedometer.gnut",
+			"RunOn": "CLIENT && MP",
+			"ClientCallback": {
+				"After": "ClPilotSpeedometer_Init"
+			}
+		}
+	]
+}
