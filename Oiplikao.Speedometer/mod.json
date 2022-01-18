@@ -4,7 +4,7 @@
 	"Description": "Enables the speedometer",
 	"Version": "1.0.0",
 	"Authors": ["Oiplikao"],
-	"LoadPriority": 2,
+	"LoadPriority": 3,
 	
 	"ConVars":
 	[
@@ -17,10 +17,10 @@
 	"Scripts":
 	[
 		{
-			"Path": "client/cl_pilot_speedometer.gnut",
+			"Path": "client/cl_pilot_speedometer_init.gnut",
 			"RunOn": "CLIENT && MP",
 			"ClientCallback": {
-				"After": "ClPilotSpeedometer_Init"
+				"Before": "ClPilotSpeedometer_Init_External"
 			}
 		}
 	]

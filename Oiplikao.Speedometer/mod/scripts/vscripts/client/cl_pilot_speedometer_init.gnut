@@ -1,0 +1,6 @@
+global function ClPilotSpeedometer_Init_External
+
+void function ClPilotSpeedometer_Init_External()
+{
+	ClPilotSpeedometer_Init()
+}
