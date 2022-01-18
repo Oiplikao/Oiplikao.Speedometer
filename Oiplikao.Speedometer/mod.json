@@ -9,8 +9,8 @@
 	"ConVars":
 	[
 		{
-			"Name": "speedometer_units",
-			"DefaultValue": "put_metric_here_to_use_metric_units"
+			"Name": "speedometer_use_metric_units",
+			"DefaultValue": "0"
 		}
 	],
 	

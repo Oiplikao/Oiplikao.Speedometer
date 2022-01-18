@@ -9,7 +9,7 @@ struct
 void function ClPilotSpeedometer_Init()
 {
 	file.useMetric = false
-	if ( GetConVarString( "speedometer_units" ) == "metric" )
+	if ( GetConVarInt( "speedometer_use_metric_units" ) > 0 )
 		file.useMetric = true
 
 	AddCreatePilotCockpitCallback( CreatePilotSpeedometer )
