@@ -17,7 +17,7 @@
 	"Scripts":
 	[
 		{
-			"Path": "client\cl_pilot_speedometer.gnut",
+			"Path": "client/cl_pilot_speedometer.gnut",
 			"RunOn": "CLIENT && MP",
 			"ClientCallback": {
 				"After": "ClPilotSpeedometer_Init"
